@@ -35,9 +35,9 @@ export default function Home() {
 				<section id="sff">
 					<SFF />
 				</section>
-				<section id="photography">
+				{/* <section id="photography">
 					<BoardGames />
-				</section>
+				</section> */}
 			</div>
 		</div>
 	);
