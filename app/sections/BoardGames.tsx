@@ -48,7 +48,11 @@ export default async function BoardGames() {
 					Here: Recent newsletters from <strong>Don’t Eat the Meeples</strong>
 				</SectionSubheading>
 				<SectionHeading className="block font-mono uppercase hover:underline">
-					<a href="https://donteatthemeeples.substack.com">
+					<a
+						href="https://donteatthemeeples.substack.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Board Games | Don't Eat the Meeples
 					</a>
 				</SectionHeading>

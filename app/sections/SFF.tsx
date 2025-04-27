@@ -54,7 +54,6 @@ export default async function SFF() {
 				</SectionSubheading>
 				<SectionHeading className="border-b-amber-400 hover:underline underline-offset-1">
 					<a
-						className="block font-mono uppercase hover:underline"
 						href="https://open.spotify.com/show/1Hlyr0Dt4Y3A4gP6cbKnYg?si=PHOmrG4zQ3-S-P7yALc3yQ"
 						target="_blank"
 						rel="noopener noreferrer"

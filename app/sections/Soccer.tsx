@@ -50,16 +50,14 @@ export default async function Soccer() {
 					Here: Recent articles at <strong>Wasatch Soccer Sentinel</strong>
 				</SectionSubheading>
 				<SectionHeading className="border-b-amber-400 hover:underline underline-offset-1">
-					<a href="https://wasatch.soccer">Soccer | Wasatch Soccer Sentinel</a>
+					<a
+						href="https://wasatch.soccer"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Soccer | Wasatch Soccer Sentinel
+					</a>
 				</SectionHeading>
-				<a
-					className="block font-mono rounded-md uppercase transition-colors duration-200 ease-in-out hover:underline"
-					href="https://wasatch.soccer"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Read More
-				</a>
 			</div>
 			<ul className="list-none grid grid-flow-row gap-8">
 				{posts.map((post) => (
