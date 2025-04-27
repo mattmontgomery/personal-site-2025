@@ -48,7 +48,9 @@ export default async function BoardGames() {
 					Here: Recent newsletters from <strong>Don’t Eat the Meeples</strong>
 				</SectionSubheading>
 				<SectionHeading className="block font-mono uppercase hover:underline">
-					<a href="https://donteatthemeeples.substack.com">Board Games</a>
+					<a href="https://donteatthemeeples.substack.com">
+						Board Games | Don't Eat the Meeples
+					</a>
 				</SectionHeading>
 			</div>
 			<ul className="list-none grid grid-flow-row gap-8">
