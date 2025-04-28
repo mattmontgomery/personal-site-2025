@@ -33,9 +33,7 @@ export default function RootLayout({
 			lang="en"
 			className={`${geistSans.variable} ${fancy.variable} ${geistMono.variable}`}
 		>
-			<body
-				className={`antialiased bg-slate-50 dark:bg-slate-800 ${geistSans.className}`}
-			>
+			<body className={`antialiased bg-white ${geistSans.className}`}>
 				<div className="max-w-4xl m-auto">{children}</div>
 			</body>
 		</html>

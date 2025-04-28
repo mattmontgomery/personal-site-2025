@@ -44,32 +44,16 @@ export default async function Soccer() {
 			}),
 		);
 	return (
-		<section id="board-games">
-			<div className="flex flex-col gap-2 mb-2">
-				<SectionSubheading>
-					Here: Recent articles at <strong>Wasatch Soccer Sentinel</strong>
-				</SectionSubheading>
-				<SectionHeading className="border-b-amber-400 hover:underline underline-offset-1">
-					<a
-						href="https://wasatch.soccer"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Soccer | Wasatch Soccer Sentinel
-					</a>
-				</SectionHeading>
-			</div>
-			<ul className="list-none grid grid-flow-row gap-8">
-				{posts.map((post) => (
-					<Item
-						key={post.link}
-						description={post.description}
-						link={post.link}
-						pubDate={post.pubDate}
-						title={post.title}
-					/>
-				))}
-			</ul>
-		</section>
+		<ul className="list-none grid grid-flow-row gap-8">
+			{posts.map((post) => (
+				<Item
+					key={post.link}
+					description={post.description}
+					link={post.link}
+					pubDate={post.pubDate}
+					title={post.title}
+				/>
+			))}
+		</ul>
 	);
 }

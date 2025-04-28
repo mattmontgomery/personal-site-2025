@@ -47,32 +47,16 @@ export default async function SFF() {
 			}),
 		);
 	return (
-		<section id="board-games">
-			<div className="flex flex-col gap-2 mb-2">
-				<SectionSubheading>
-					Here: Recent podcasts at <strong>Vintage Sci-Fi Shorts</strong>
-				</SectionSubheading>
-				<SectionHeading className="border-b-amber-400 hover:underline underline-offset-1">
-					<a
-						href="https://open.spotify.com/show/1Hlyr0Dt4Y3A4gP6cbKnYg?si=PHOmrG4zQ3-S-P7yALc3yQ"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Speculative Fiction | Vintage Sci-Fi Shorts
-					</a>
-				</SectionHeading>
-			</div>
-			<ul className="list-none grid grid-flow-row gap-8">
-				{posts.map((post) => (
-					<Item
-						key={post.link}
-						description={post.description}
-						link={post.link}
-						pubDate={post.pubDate}
-						title={post.title}
-					/>
-				))}
-			</ul>
-		</section>
+		<ul className="list-none grid grid-flow-row gap-8">
+			{posts.map((post) => (
+				<Item
+					key={post.link}
+					description={post.description}
+					link={post.link}
+					pubDate={post.pubDate}
+					title={post.title}
+				/>
+			))}
+		</ul>
 	);
 }

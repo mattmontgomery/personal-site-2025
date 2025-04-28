@@ -6,14 +6,14 @@ export function SectionHeading(props: HTMLProps<HTMLHeadingElement>) {
 	return (
 		<h3
 			{...props}
-			className={`text-2xl font-sans uppercase border-0 border-b-2 pb-2 ${props.className} underlin-offset-2`}
+			className={`text-2xl font-sans uppercase border-b-2 underline-offset-2 sticky top-0 bg-white dark:bg-black pb-4 mb-4 tracking-tighter ${props.className}`}
 		/>
 	);
 }
 export function SectionSubheading(props: HTMLProps<HTMLHeadingElement>) {
 	return (
 		<h4
-			className="text-md font-light uppercase text-slate-800 dark:text-slate-300"
+			className="text-sm font-sans tracking-tighter uppercase text-slate-800 dark:text-slate-300"
 			{...props}
 		/>
 	);

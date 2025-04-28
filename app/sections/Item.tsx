@@ -10,21 +10,22 @@ export default function Item({
 	pubDate: string;
 }) {
 	return (
-		<li
-			key={link}
-			className="group border-l-4 border-l-transparent hover:border-l-white -ml-5 pl-4"
-		>
+		<li key={link} className="group max-w-prose text-pretty">
 			<a
 				href={link}
 				target="_blank"
 				rel="noopener noreferrer"
-				className="flex flex-col gap-1"
+				className="flex flex-col"
 			>
-				<p className="text-xs text-slate-500 uppercase">{pubDate}</p>
-				<h3 className="text-lg font-medium uppercase group-hover:underline underline-offset-1">
+				<p className="text-xs dark:text-slate-300 text-slate-500 uppercase">
+					{pubDate}
+				</p>
+				<h3 className="text-lg font-medium uppercase group-hover:underline underline-offset-1 leading-6">
 					{title}
 				</h3>
-				<p className="line-clamp-2">{description}</p>
+				<p className="leading-5 text-slate-500 text-sm line-clamp-3">
+					{description}
+				</p>
 			</a>
 		</li>
 	);

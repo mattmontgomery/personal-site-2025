@@ -42,32 +42,16 @@ export default async function BoardGames() {
 		}),
 	);
 	return (
-		<section id="board-games">
-			<div className="flex flex-col mb-2 gap-2">
-				<SectionSubheading>
-					Here: Recent newsletters from <strong>Don’t Eat the Meeples</strong>
-				</SectionSubheading>
-				<SectionHeading className="block font-mono uppercase hover:underline">
-					<a
-						href="https://donteatthemeeples.substack.com"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Board Games | Don't Eat the Meeples
-					</a>
-				</SectionHeading>
-			</div>
-			<ul className="list-none grid grid-flow-row gap-8">
-				{posts.map((post) => (
-					<Item
-						key={post.link}
-						description={post.description}
-						link={post.link}
-						pubDate={post.pubDate}
-						title={post.title}
-					/>
-				))}
-			</ul>
-		</section>
+		<ul className="list-none grid grid-flow-row gap-8">
+			{posts.map((post) => (
+				<Item
+					key={post.link}
+					description={post.description}
+					link={post.link}
+					pubDate={post.pubDate}
+					title={post.title}
+				/>
+			))}
+		</ul>
 	);
 }
