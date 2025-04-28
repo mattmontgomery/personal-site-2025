@@ -1,3 +1,5 @@
+import { track } from "@vercel/analytics";
+
 export default function Item({
 	title,
 	description,
@@ -16,6 +18,12 @@ export default function Item({
 				target="_blank"
 				rel="noopener noreferrer"
 				className="flex flex-col"
+				onClick={(ev) => {
+					track("Item Click", {
+						href: link,
+						text: title,
+					});
+				}}
 			>
 				<p className="text-xs dark:text-slate-300 text-slate-500 uppercase">
 					{pubDate}
