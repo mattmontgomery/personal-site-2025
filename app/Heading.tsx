@@ -53,22 +53,3 @@ export function ExternalLink(props: HTMLProps<HTMLAnchorElement>) {
 		/>
 	);
 }
-
-import { useEffect } from "react";
-export function useInitialJumpLink(initialJumpLink: string | null) {
-	// biome-ignore lint/correctness/useExhaustiveDependencies(initialJumpLink): We only want to perform the scroll on initial page load
-	useEffect(() => {
-		if (initialJumpLink) {
-			const target = document.querySelector(initialJumpLink);
-			if (target) {
-				target.scrollIntoView({
-					behavior: "smooth",
-					block: "start",
-					inline: "nearest",
-				});
-			}
-			window.history.pushState({}, "", initialJumpLink);
-		}
-	}, []);
-	return initialJumpLink;
-}
