@@ -43,6 +43,16 @@ export function JumpLink(props: HTMLProps<HTMLButtonElement>) {
 		/>
 	);
 }
+export function ExternalLink(props: HTMLProps<HTMLAnchorElement>) {
+	return (
+		<a
+			{...props}
+			className={`block text-sm p-2 uppercase hover:underline underline-2 cursor-pointer ease-in-out ${props.className}`}
+			target="_blank"
+			rel="noopener noreferrer"
+		/>
+	);
+}
 
 import { useEffect } from "react";
 export function useInitialJumpLink(initialJumpLink: string | null) {

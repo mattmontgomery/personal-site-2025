@@ -1,13 +1,20 @@
 import BoardGames from "./sections/BoardGames";
-import { JumpLink, SectionHeading, SectionSubheading } from "./Heading";
+import {
+	ExternalLink,
+	JumpLink,
+	SectionHeading,
+	SectionSubheading,
+} from "./Heading";
 import Soccer from "./sections/Soccer";
 import SFF from "./sections/SFF";
 
 export default function Home() {
 	return (
-		<div className="flex flex-col gap-8 min-h-screen divide-y-4 divide-slate-400">
+		<div className="flex flex-col gap-16 min-h-screen pt-8">
 			<div className="grid md:grid-flow-col grid-cols-[1fr,auto] gap-4 items-center">
-				<h1 className="text-4xl font-bold">Matt Montgomery</h1>
+				<h1 className="text-4xl font-light tracking-tighter uppercase">
+					Matt Montgomery
+				</h1>
 				<nav className="flex md:justify-end items-center">
 					<ul className="flex space-x-4 md:space-x-0 max-md:flex-col">
 						<li>
@@ -18,6 +25,15 @@ export default function Home() {
 						</li>
 						<li>
 							<JumpLink href="#sff">Sci-Fi</JumpLink>
+						</li>
+						<li>
+							<ExternalLink
+								href="https://github.com/mattmontgomery"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								GitHub
+							</ExternalLink>
 						</li>
 						{/* <li>
 							<JumpLink href="#photography">Photography</JumpLink>
