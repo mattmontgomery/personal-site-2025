@@ -1,3 +1,5 @@
+"use client";
+
 import { track } from "@vercel/analytics";
 
 export default function Item({
