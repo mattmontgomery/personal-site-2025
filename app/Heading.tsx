@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@vercel/analytics";
 import type { HTMLProps } from "react";
 
 export function SectionHeading(props: HTMLProps<HTMLHeadingElement>) {
@@ -27,6 +28,10 @@ export function JumpLink(props: HTMLProps<HTMLButtonElement>) {
 			className={`block text-sm p-2 uppercase hover:underline underline-2 cursor-pointer ease-in-out ${props.className}`}
 			onClick={(ev) => {
 				ev.preventDefault();
+				track("Jump Link", {
+					href: String(props.href),
+					text: String(props.children),
+				});
 				if (!props.href) {
 					return;
 				}
