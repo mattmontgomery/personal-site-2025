@@ -4,7 +4,7 @@ import Item from "./Item";
 
 export default async function BoardGames() {
 	const substackRssFeed = await fetch(
-		"https://donteatthemeeples.substack.com/feed",
+		"https://www.donteatthemeeples.com/feed",
 		{
 			next: { revalidate: 60 * 60 }, // 1 hour
 		},
