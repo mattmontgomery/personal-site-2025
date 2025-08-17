@@ -48,11 +48,11 @@ export default function Home() {
 					</SectionSubheading>
 					<SectionHeading className="border-b-amber-400 hover:underline underline-offset-1">
 						<a
-							href="https://donteatthemeeples.substack.com"
+							href="https://www.donteatthemeeples.com"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Board Games | <strong>Don't Eat the Meeples</strong>
+							A weekly newsletter about board games and card games | <strong>Don't Eat the Meeples</strong>
 						</a>
 					</SectionHeading>
 					<BoardGames />
